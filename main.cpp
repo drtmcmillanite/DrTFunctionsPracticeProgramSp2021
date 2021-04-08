@@ -3,7 +3,9 @@ CPP: Function_Practice_Little_Sister.cpp
 Teacher: Dr. Tyson McMillan, 04-7-2021
 Student: Dr_T
 
-Description: Dr_T's little sister is smart.
+Description: 
+A program to teach students how to work with functions in C++ by Dr. Tyson McMillan. 
+Dr_T's little sister is smart.
 She uses a divide and concur method to get $20 from the parents.
 She asks mom and dad individually. Based upon their responses she can
 earn $0, $20, or $40 from them.
