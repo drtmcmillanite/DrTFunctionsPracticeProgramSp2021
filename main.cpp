@@ -21,7 +21,7 @@ double MakeBank(bool,bool); //function prototype
 
 int main()
 {
-    //function calls (true = "yes", false="no"
+    //function calls (true = "yes", false="no")
     cout << "\nLittle Sister Function calls: ";
     cout << "\nOption 1, Little Sister Earns: $" << MakeBank(true,false);
     cout << "\nOption 2, Little Sister Earns: $" << MakeBank(false,true);
@@ -44,6 +44,16 @@ double MakeBank(bool mom, bool dad)
 {
 	double amtEarned = 0.0; //what sister can get from parents
 	//handle each scenario How much does Little Sister earn $20 increments.
+  if(mom == true)
+  {
+    amtEarned += 20.0; //amtEarned = amtEarned + 20.0; 
+  }
+
+  if(mom == false)
+  {
+   // cout << "\n\tAin't - mom" << endl; 
+  }
+
 
 	return amtEarned;
 }
