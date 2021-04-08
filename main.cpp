@@ -5,6 +5,10 @@ Student: Dr_T
 
 Description: 
 A program to teach students how to work with functions in C++ by Dr. Tyson McMillan. 
+Knowing the vital elements of a function is importan to programming:
+1) function prototype
+2) function definition
+3) function call
 Dr_T's little sister is smart.
 She uses a divide and concur method to get $20 from the parents.
 She asks mom and dad individually. Based upon their responses she can
