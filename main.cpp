@@ -19,9 +19,13 @@ using namespace std;
 //$_earned       mom  dad
 double MakeBank(bool,bool); //function prototype
 void welcomeMessage(); 
+void dayOfTheWeek(int);
+
 
 int main()
 {
+    int dayMain = 0; 
+    
     welcomeMessage(); //function call 
     //function calls (true = "yes", false="no")
     cout << "\nLittle Sister Function calls: ";
@@ -30,14 +34,20 @@ int main()
     cout << "\nOption 3, Little Sister Earns: $" << MakeBank(true,true);
     cout << "\nOption 4, Little Sister Earns: $" <<  MakeBank(false,false);
 
+    cout << "\nPlease enter a day of the week (1-7): ";
+    cin >> dayMain; 
+    dayOfTheWeek(dayMain);
+
     /*Programming Challenges
       **1. Extend this program to output how much Little Sister earns in each scenario.
-      2. Create a void welcomeMessage(); function to show a nice greeting on screen to the program.
-      3. Extend this program to write a void dayOfTheWeek(int); function given user input of the number (1 output Sunday);
+      **2. Create a void welcomeMessage(); function to show a nice greeting on screen to the program.
+      ***3. Extend this program to write a void dayOfTheWeek(int); function given user input of the number (1 output Sunday);
       4. Output each day of the week in a different color.
       5. Extend this program create a function double numberCube(double); to output the cube of the number passed.
       6. Extend this program set the precision of the numberCube result to 4 decimal places
       7. Loop the program until exit conditions 'E' AND 'e', clear the screen upon each loop #include<cstdlib> system("cls");
+      8. Add input validation with Dr_T's .h file 
+      9. Add add a class to this program 
     */
     return 0;
 }
@@ -76,5 +86,42 @@ void welcomeMessage()
   {
     cout << "*"; 
   }  
+}
+
+void dayOfTheWeek(int day)
+{
+  if(day == 1)
+  {
+    cout << "\nIt's Sunday!" << endl; 
+  }
+  else if(day == 2)
+  {
+    cout << "\nIt's Monday!" << endl; 
+  }
+  else if(day == 3)
+  {
+    cout << "\nIt's Tuesday!" << endl; 
+  }
+  else if(day == 4)
+  {
+    cout << "\nIt's Wednesday!" << endl; 
+  }
+  else if(day == 5)
+  {
+    cout << "\nIt's Thursday!" << endl; 
+  }
+  else if(day == 6)
+  {
+    cout << "\nIt's Friday!" << endl; 
+  }
+  else if(day == 7)
+  {
+    cout << "\nIt's Saturday!" << endl; 
+  }
+  else //default clause 
+  {
+    cout << "\nError: somthing when wrong." << endl; 
+  }
+
 }
 
